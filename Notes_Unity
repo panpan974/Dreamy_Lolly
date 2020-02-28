@@ -1,0 +1,25 @@
+Etapes : 
+
+  - Créer un état de début(state)
+  - Créer un état de fin
+  - Ajout d'Event (Trigger 2D...)
+  - Dans send Event on créé un événement (Hit...)
+  - On relie à l'état de fin.
+
+
+Raccourcis  pratiques :
+
+
+  Détruire un objet (soi) : Destroy Self
+  
+  Détecter une collision : Trigger 2D Event
+    - GameObject: Celui qui écoute
+    - Trigger: Si on entre, on sort ou on reste dans la zone.
+    - Send Event: Transition (New Event)
+      Penser à mettre "Is Trigger" Dans Box Collider 2D.
+      
+  
+  Mettre un Timer: Wait
+    
+    
+  
