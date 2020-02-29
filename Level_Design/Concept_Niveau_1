@@ -1,0 +1,44 @@
+Introduction------------------------------------------------------------------------
+
+	Le niveau 1 est le premier niveau que le joueur rencontre. Il faut qu'il soit unique, assez fort pour donner l'envie au joeur de continuer à jouer, tout en appréciant l'esprit du jeu. Il faut également lui présenter les différentes mécaniques pour qu'il puisse résoudre les énigmes. 
+	
+  Je tiens à favoriser l'apprentissage visuel et non pas textuel; ainsi, il n'y aurait pas d'écrit de commande autre que dans la pause du jeu.
+	
+	
+Mécaniques de jeu-------------------------------------------------------------------
+
+	Le joueur se retrouve confronté à différentes mécaniques de jeu, plus ou moins fortes dans chaque niveau. Ici :
+	
+		- Les contrôles basiques (ZQSD, saut) ;
+		- Les blocs Chubby qui permettent de sauter plus haut ;
+		- Les portes qui sont des téléporteurs ;
+		- Les échelles qu'on peut grimper ;
+		- Ventilateur où l'on peut se laisser emporter ;
+		- Les boutons qui activent des choses ;
+		- Le dépot et la récupération de blocs ;
+
+Graphismes et Symbolismes-----------------------------------------------------------
+
+	Chaque niveau a un symbolisme principal. Ici, la violence verbale. Il y aura donc un gros travail visuel mais également audio.
+	Le niveau est composé de 3 parties, tous reliés par un fil blanc qui se grandit au fur et à mesure sous différentes lettres.
+	
+		La partie 1 - Tutoriel
+			La partie tutoriel est juste une phase pour comprendre les contrôles. Néanmoins elle possède malgré tout sa patte graphique.
+			Il y a un fil qui débute à l'éléphant et qui monte vers les autres parties de niveau. Le fil est relié par différents mots dégradants qui évoquent les mots dont elle souffre (Souffrance, tristesse, solitude...). L'idée est venue de cette image: https://i.pinimg.com/564x/c7/ab/5f/c7ab5fc3b1c315f4be2ea8b8a0288b8d.jpg
+			
+		La partie 2 - La violence verbale est quelque chose de caché
+			La deuxième partie est composée d'une énigme, celle des Bouches. Il faut effectivement utiliser des blocs pour monter sur les bouches barrées pour pouvoir atteindre la partie 3.
+			Ici, le fil relie les différentes bouches qui sont closes par des barres (plateforme) où sont notés les mots qu'elle a déjà entendu (pute, salope, connasse, bonne à rien, inutile). Autour se trouvent différents fils un peu plus distordus où les mêmes mots gravitent autour. https://i.pinimg.com/564x/b6/b5/7a/b6b57aa60945c5c2a4107ceba1026984.jpg
+			En fond, lors de cette partie, ajoutée à la mélodie principale, on entendrait des sortes de murmurs retenus, comme si quelqu'un était bayonné et ne pouvait plus parler.
+			
+		La partie 3 - Etre noyé par les mots
+			La troisième partie possède, comme background, des mots empilés les uns sur les autres. Cela montre une accumulation de tous les mots qu'elle a souffert. Les plateformes sont des mots barrés, comme "Désolé, Pardon, Arrête..." https://i.pinimg.com/564x/a7/b5/e0/a7b5e0bca470113564db1d1e057eaab4.jpg
+			On entendrait en fond des pleurs à bas volume en plus de la mélodie principale.
+			
+		La salle du boss
+			La salle du boss est entièrement noire avec juste une aura blanche tout autour de la baleine. La baleine émet un gros cri qui fait trembler l'écran, puis le combat commence.
+			https://i.pinimg.com/564x/63/79/7e/63797e2ef1a31901aa35b739ebdd63fb.jpg
+			
+			
+			
+			
