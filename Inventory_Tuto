@@ -1,0 +1,68 @@
+Ceci n'est pas vraiment un tutoriel d'Inventaire poussé, mais juste une explication détaillée de ce que j'ai fait. Avec le contexte.
+
+Mon but était de faire un inventaire pour récupérer des lettres, les afficher en haut de l'écran. En fin de niveau, il y a une vérification du nombre de lettre pour voir si le joueur peut accéder à la salle secrète.
+
+Il va se composer de 3 objets : 
+  - La lettre a récolter ;
+  - La lettre à afficher dans le GUI ;
+  - Le trigger  pour accéder à la salle secrète.
+  
+  
+
+Dans Objet_a_recolter--------------------------
+
+En mots, l'objet a récolter va attendre d'être récolté. Quand il y a une collision avec le joueur, il va venir activer la lettre du GUI associé puis venir s'autodétruire.
+
+Nous avons 2 états : Le premier attente et le deuxième Add_to_list.
+
+  Attente: Trigger2D Event (Collision avec le joueur)
+  Add_to_list: 
+    Activate Game Object (PLACER LA LETTRE A AFFICHER DANS LE GUI)
+    Destroy Self
+    
+ On doit juste modifier la lettre à afficher dans le GUI.
+ 
+ 
+Dans Lettre_GUI--------------------------------
+
+Quand la lettre sera activée, il faudra ajouter la lettre à la liste de l'inventaire.
+
+Pour cela on va créer deux variables :
+  - Une variable locale self pour pouvoir récupérer le Game object lettre ;
+  - Une variable gloable Array de Game Object pour pouvoir placer toutes les lettres dedans.
+
+Il y a un seul état : Activé.
+  Get Owner : self (permet de stocker la Lettre GUI dans une variable Game Object)
+  
+  Array Add: 
+    Array: Objet1
+    Value: self
+
+On peut le reprendre sans faire de modifications aupréalables hormis le sprite.
+
+Dans Trigger_Secret_Room --------------------------------
+
+Quand il y aura une collision avec le joueur, on va vérifier quelle est la taille de son inventaire. Si il y a le bon nombre de mots, on va le téléporter à la salle secrète. Sinon, il ne se passera rien.
+
+Il y a donc trois états :
+  - En attente
+    Trigger2D Event (pour la collision avec le joueur)
+
+On va aussi créer une variable locale number_of_letters pour stocker le nombre de lettre présent dans l'inventaire.
+    
+    
+  - Quelle taille fait mon inventaire ? 
+    Array Length:
+      Array:Objet1
+      Length :number_of_letters
+  
+      
+    Int Compare:
+      Integer1: number_of_letters
+      Integer2: (NOMBRE DE LETTRE DANS LE MOT : DU NIVEAU)
+      Equal: access_secret_room
+      Less than: FINISHED
+      Greater than: FINISHED (ceci n'est pas sensé arriver)
+
+Il faut modifier le nombre de lettres dans le mot du nvieau pour chaque Trigger_Secret_Room.
+ 
