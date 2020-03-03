@@ -1,3 +1,16 @@
+Vector 3 : Vouloir comparer des valeurs simaires (x,y,z par exemple)
+
+
+
+Nomenclature:
+has_key pour une booléenne 
+
+Dnas une création de variable :
+  Tooltip: Description
+
+
+
+
 Etapes : 
 
   - Créer un état de début(state)
@@ -17,6 +30,10 @@ Raccourcis  pratiques :
     - Trigger: Si on entre, on sort ou on reste dans la zone.
     - Send Event: Transition (New Event)
       Penser à mettre "Is Trigger" Dans Box Collider 2D.
+      
+    - Set Bool Variable : Permet de changer la valeur de bool.
+    
+    - Tester la valeur booléenne : Bool test
       
   
   Mettre un Timer: Wait
