@@ -1,0 +1,55 @@
+Ceci ne sont pas des notes directement prises du cours mais reprises de videos.
+
+
+ARRAY IN PLAYMAKER
+
+(Penser à cocher Debug)
+
+1 - Créer un Empty (Game Manager) et les objets qu'on veut placer.
+
+2 - Créer un état (Init) et créer une variable Array et rentrer la taille. Et préciser que c'est une liste de Game Object.
+
+3 - Créer une global Variable Array appelé Objet1 et le type en Game Object.
+
+4 - Créer un état (Add Me) et une Action Array Add sur le premier objet. 
+
+5 - Placer Objet 1 dans Array.
+
+6 - Créer une variable GameObject appelé "self"
+
+7 - Retourner sur l'objet 1 et aller chercher Get Owner Action.
+
+8 - Store Game Object : Self
+
+9 - Dans Array Add Value, metre Self.
+
+( Cette démarche permet de créer une variable Game Object appelé "self". Cependant comme cela est vide, on va remplir la variable du Game Object avec lui même donc "Get Owner" )
+
+10 - Aller dans Game Manager Placer un Array Sort pour voir quel est le contenu de la liste Objet 1 (voir si ça s'ajoute bien)
+
+11 - Copier coller le FSM de l'objet 1 à chaque fois.
+
+(Et voilà, on a nos objets qui viennent dans la liste.)
+
+---
+Se balader dans la liste.
+
+12 - Créer un nouvel état dans Game Manager. (Itirate-
+
+13 - Créer une transition FINISHED de init vers Itirate)
+
+14 - Ajouter dans Init un Wait pour créer la transition.
+
+15 - Cliquer sur Itirate et ajouter un Action Get Next.
+
+16 - On selection notre Liste Array.
+
+17 - On créé une transition appelée "loop" qu'on place sur Itirate et on place une transition FINISHE;
+
+18 - dANS aRRAY gET nEXT: long event : loop ; Sinifhes event : FNISHED. (ça se balade et à la fin ça va au finsihed.)
+
+19 - Créer une variable Game Object appelé CurrentCube
+
+20 - Dans Itirate<ArraygetNext< Result, mettre Current Cube.  
+21 - Faire ce qu'on veut avec la liste.
+  
