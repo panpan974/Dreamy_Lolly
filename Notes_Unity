@@ -1,5 +1,6 @@
 Vector 3 : Vouloir comparer des valeurs simaires (x,y,z par exemple)
 
+Animation: Filter Mode: Trilinaire ou bilaine ou point (respecte le pixelart)
 
 
 Nomenclature:
@@ -7,6 +8,7 @@ has_key pour une booléenne
 
 Dnas une création de variable :
   Tooltip: Description
+
 
 
 
@@ -34,6 +36,13 @@ Raccourcis  pratiques :
     - Set Bool Variable : Permet de changer la valeur de bool.
     
     - Tester la valeur booléenne : Bool test
+    
+    - Add Force Relative: Dépend de l'objet - si on veut qu'il ait une force dans sa direction par exemple
+     -Add Force: Dépend du monde - si on veut tout le temps le faire voelr vers le haut-
+      - Impulse: Accélération /Force : Constante
+      
+    - Canvas :
+      Penser à mettre le truc en haut à gauche
       
   
   Mettre un Timer: Wait
